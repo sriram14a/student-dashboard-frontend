@@ -1,0 +1,1 @@
+export const API = "https://student-dashboard-ubi2.onrender.com"
