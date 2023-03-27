@@ -646,16 +646,16 @@ export function Portfolio() {
     });
     const data = await response.json();
     if (data.status === "ok") {
-      window.location.reload();
+      getDetails();
     }
   }
 
   const getDetails = () => {
-    fetch(`${API}/user/portfolio`, {
+    fetch(`${API}/user/portfolio/${email}`, {
       method: "GET",
     })
       .then((data) => data.json())
-      .then((tch) => setDetails(tch[0]));
+      .then((tch) => setDetails(tch));
   };
 
   useEffect(() => getDetails(), []);

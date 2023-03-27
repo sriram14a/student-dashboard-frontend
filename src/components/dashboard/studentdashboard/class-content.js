@@ -173,7 +173,7 @@ export function Web() {
       headers: { "Content-Type": "application/json" },
     })
       .then((data) => data.json())
-      .then(() => window.location.reload());
+      .then(() => getWeb());
     event.preventDefault();
   };
 
@@ -312,7 +312,7 @@ export function Cap1() {
       headers: { "Content-Type": "application/json" },
     })
       .then((data) => data.json())
-      .then(() => window.location.reload());
+      .then(() =>getWeb());
     event.preventDefault();
   };
 
