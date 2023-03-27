@@ -28,7 +28,7 @@ export function RegisterAdmin() {
 
     const data = await response.json();
 
-    if (data.message === "Username Already Exists") {
+    if (data.message === "Username already taken") {
       alert("User already exist try Another mail id");
     }
 
